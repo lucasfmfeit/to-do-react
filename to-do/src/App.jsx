@@ -1,15 +1,17 @@
-import { Header } from "./Header"
+
+import { Todo } from "./components/todo/index"
+import "./global.css"
 
 function App() {
 
 
   return (
     <>
-      <Header/>
+     <Todo/>
     
     </>
     
-    
+  
      )
 }
 

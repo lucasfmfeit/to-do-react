@@ -1,0 +1,36 @@
+:root{
+
+    
+    --white:#fff;
+    
+    --gray-100:#f8f8ff;
+    --gray-200:#ecedf6;
+    --gray-500:#dedfe1;
+    --gray-700:#cccdde;
+    --gray-800:#646681;
+    --gray-900:#585858;
+    
+    
+    --purple-600:#646ff0;
+    
+    
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+body{
+    background-color: var(--gray-100);
+    color: var(--gray-900);
+}
+
+input,textarea,button,body{
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 1rem;
+}
