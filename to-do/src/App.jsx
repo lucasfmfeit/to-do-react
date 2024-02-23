@@ -1,18 +1,19 @@
 
 import { Todo } from "./components/todo/index"
+import styles from "./App.module.css"
 import "./global.css"
 
-function App() {
+
+
+export function App() {
 
 
   return (
-    <>
-     <Todo/>
+    <div className={styles.appContainer}>
+        <Todo/>
+    </div>
     
-    </>
-    
-  
      )
 }
 
-export default App
+
