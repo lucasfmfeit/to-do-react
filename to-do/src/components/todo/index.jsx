@@ -1,4 +1,6 @@
+import { Task } from '../taks'
 import styles from './styles.module.css'
+
 
 export function Todo(){
     return(
@@ -11,14 +13,19 @@ export function Todo(){
                     Add Task
                 </button>
                 <select>
-                    <ul>All</ul>
-                    <ul>None</ul>
+
+                    <option value="all" disabled selected>All</option>
+                    
+                    <option value="none">None</option>
                 </select>
             </div>
-            <p>dalkfnjalkfn</p>
-            <p>dalkfnjalkfn</p>
-            <p>dalkfnjalkfn</p>
-            <p>dalkfnjalkfn</p>
+            <div className={styles.tasksBox}>
+                <Task/>
+                <Task/>
+                <Task/>
+                <Task/>
+                <Task/>
+            </div>
             
         </div>
     )
