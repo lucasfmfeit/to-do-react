@@ -1,4 +1,4 @@
-import { Task } from '../taks'
+import { Task } from '../task'
 import styles from './styles.module.css'
 
 

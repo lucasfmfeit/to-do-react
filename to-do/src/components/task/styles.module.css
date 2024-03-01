@@ -1,0 +1,19 @@
+.taskContainer{
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0.25rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.spanCheck{
+    display: flex;
+}
+
+.taskContainer span{
+    justify-content: column;
+    height: 3 rem;
+    padding-left: 1rem;
+}
