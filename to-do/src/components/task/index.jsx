@@ -1,4 +1,7 @@
 import styles from "./styles.module.css"
+
+
+
 export function Task(){
     return(
         <div className={styles.taskContainer}>
@@ -11,7 +14,7 @@ export function Task(){
                     </span>
                 </div>
                 <div className = {styles.buttons}>
-                    <button id="trash">Delete</button>
+                    <button id="trash"></button>
                     <button id='edit'>Edit</button>
                 </div>
 
