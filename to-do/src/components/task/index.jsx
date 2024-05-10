@@ -2,15 +2,22 @@ import styles from "./styles.module.css"
 
 
 
-export function Task(){
+export function Task( {id,description,checked,data,onCheckedTask}){
+
+    console.log(id,description,data,checked)
+
+    function handleChecked(){
+        onCheckedTask(id)
+    }
+    
     return(
         <div className={styles.taskContainer}>
                 <div className = {styles.spanCheck}>
-                    <input type="checkbox" name="" id="checkbox" />
+                    <input onChange={handleChecked} type="checkbox" name="" id="checkbox" checked={checked}/>
                     
                     <span>
-                        <h3>title</h3>
-                        <time dateTime ='2001-05-15 19:00'>May 15</time>
+                        <h3>{description}</h3>
+                        <time dateTime ='2001-05-15 19:00'>{data}</time>
                     </span>
                 </div>
                 <div className = {styles.buttons}>
